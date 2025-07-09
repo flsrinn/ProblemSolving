@@ -23,7 +23,7 @@ class Solution {
             for(int i=0; i<times.length; i++) {
                 count += mid / times[i];
                 
-                if(count > n) right = mid - 1;
+                if(count > n) break;
             }
             
             if(count < n) left = mid + 1;
